@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events History - Slovak Community Charity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Slovak Community Charity</h1>
+        <p>South Manchester</p>
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="membership.html">Membership Sign-Up</a></li>
+          <li><a href="dates.html">Dates & Fees</a></li>
+          <li><a href="games.html">Educational Games</a></li>
+          <li><a href="gallery.html" class="active">Events History</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h2>Events History</h2>
+    </div>
+  </section>
+
+  <section class="gallery-content">
+    <div class="container">
+      <div class="gallery-intro">
+        <h3>Our Community in Action</h3>
+        <p>Browse through photos from our past events and activities. These memories showcase the vibrant Slovak community we've built together in South Manchester.</p>
+      </div>
+
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All Events</button>
+        <button class="filter-btn" data-filter="cultural">Cultural Celebrations</button>
+        <button class="filter-btn" data-filter="educational">Educational Workshops</button>
+        <button class="filter-btn" data-filter="social">Social Gatherings</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Cultural Celebrations -->
+        <div class="gallery-item cultural" data-category="cultural">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cultural Celebration">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Independence Day Celebration</h4>
+              <p>October 2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item cultural" data-category="cultural">
+          <img src="https://images.unsplash.com/photo-1472653431158-6364773b2a56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cultural Celebration">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Christmas Market</h4>
+              <p>December 2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item cultural" data-category="cultural">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cultural Celebration">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Easter Traditions</h4>
+              <p>April 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Educational Workshops -->
+        <div class="gallery-item educational" data-category="educational">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Educational Workshop">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Language Class</h4>
+              <p>February 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item educational" data-category="educational">
+          <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Educational Workshop">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Cooking Workshop</h4>
+              <p>March 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item educational" data-category="educational">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Educational Workshop">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Folk Art Workshop</h4>
+              <p>January 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Social Gatherings -->
+        <div class="gallery-item social" data-category="social">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Social Gathering">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Summer Picnic</h4>
+              <p>July 2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item social" data-category="social">
+          <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Social Gathering">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Community Dinner</h4>
+              <p>September 2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item social" data-category="social">
+          <img src="https://images.unsplash.com/photo-1464047736614-af63643285bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Social Gathering">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>New Year's Celebration</h4>
+              <p>January 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- More items -->
+        <div class="gallery-item cultural" data-category="cultural">
+          <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cultural Celebration">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Folk Dance Performance</h4>
+              <p>November 2022</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item educational" data-category="educational">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Educational Workshop">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>History Lecture</h4>
+              <p>May 2023</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery-item social" data-category="social">
+          <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Social Gathering">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h4>Family Fun Day</h4>
+              <p>June 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="gallery-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+        <a class="lightbox-prev">&#10094;</a>
+        <a class="lightbox-next">&#10095;</a>
+      </div>
+
+      <div class="gallery-load-more">
+        <button id="load-more-btn" class="btn btn-primary">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="event-timeline">
+    <div class="container">
+      <h3>Our Journey Through the Years</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2010</div>
+          <div class="timeline-content">
+            <h4>Founding of the Charity</h4>
+            <p>The Slovak Community Charity was established by a small group of Slovak expatriates in South Manchester.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2012</div>
+          <div class="timeline-content">
+            <h4>First Cultural Festival</h4>
+            <p>We organized our first major cultural festival, attracting over 200 attendees from across the region.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2015</div>
+          <div class="timeline-content">
+            <h4>Official Charity Status</h4>
+            <p>We registered as an official charity, allowing us to expand our programs and secure funding.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2017</div>
+          <div class="timeline-content">
+            <h4>Community Center Opening</h4>
+            <p>We opened our dedicated community center, providing a permanent home for our activities.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2020</div>
+          <div class="timeline-content">
+            <h4>10th Anniversary</h4>
+            <p>We celebrated our 10th anniversary with a virtual gala during the pandemic, connecting our community online.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h4>Expanding Our Reach</h4>
+            <p>We continue to grow, with over 500 members and an expanding range of programs and services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Slovak Community Charity</h3>
+          <p>Celebrating and preserving Slovak culture in South Manchester since 2010.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="dates.html">Dates & Fees</a></li>
+            <li><a href="games.html">Educational Games</a></li>
+            <li><a href="gallery.html">Events History</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Community Street, South Manchester, M20 1AB</p>
+          <p><i class="fas fa-phone"></i> +44 123 456 7890</p>
+          <p><i class="fas fa-envelope"></i> info@slovakcommunitycharity.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Slovak Community Charity. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

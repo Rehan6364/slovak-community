@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Sign-Up - Slovak Community Charity</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Slovak Community Charity</h1>
+        <p>South Manchester</p>
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="membership.html" class="active">Membership Sign-Up</a></li>
+          <li><a href="dates.html">Dates & Fees</a></li>
+          <li><a href="games.html">Educational Games</a></li>
+          <li><a href="gallery.html">Events History</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h2>Membership Sign-Up</h2>
+    </div>
+  </section>
+
+  <section class="membership-content">
+    <div class="container">
+      <div class="membership-info">
+        <h3>Join Our Community</h3>
+        <p>Becoming a member of the Slovak Community Charity gives you access to all our events, workshops, and resources. Members receive discounted rates for paid events and regular updates about our activities.</p>
+        
+        <div class="membership-benefits">
+          <h4>Membership Benefits</h4>
+          <ul>
+            <li><i class="fas fa-check"></i> Access to all community events and gatherings</li>
+            <li><i class="fas fa-check"></i> Discounted rates for workshops and classes</li>
+            <li><i class="fas fa-check"></i> Monthly newsletter with community updates</li>
+            <li><i class="fas fa-check"></i> Voting rights at our annual general meeting</li>
+            <li><i class="fas fa-check"></i> Opportunity to participate in organizing events</li>
+            <li><i class="fas fa-check"></i> Access to our members-only online resources</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="membership-form-container">
+        <h3>Registration Form</h3>
+        <form id="membership-form" class="membership-form">
+          <div class="form-group">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <span class="error-message" id="firstNameError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <span class="error-message" id="lastNameError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="error-message" id="phoneError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="address">Address *</label>
+            <input type="text" id="address" name="address" required>
+            <span class="error-message" id="addressError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" required>
+            <span class="error-message" id="cityError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="postcode">Postcode *</label>
+            <input type="text" id="postcode" name="postcode" required>
+            <span class="error-message" id="postcodeError"></span>
+          </div>
+          
+          <div class="form-group">
+            <label for="facebook">Facebook Profile (optional)</label>
+            <input type="text" id="facebook" name="facebook">
+          </div>
+          
+          <div class="form-group">
+            <label for="instagram">Instagram Handle (optional)</label>
+            <input type="text" id="instagram" name="instagram">
+          </div>
+          
+          <div class="form-group">
+            <label for="membershipType">Membership Type *</label>
+            <select id="membershipType" name="membershipType" required>
+              <option value="">Select Membership Type</option>
+              <option value="individual">Individual (£25/year)</option>
+              <option value="family">Family (£40/year)</option>
+              <option value="student">Student (£15/year)</option>
+              <option value="senior">Senior (£15/year)</option>
+            </select>
+            <span class="error-message" id="membershipTypeError"></span>
+          </div>
+          
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="termsAgree" name="termsAgree" required>
+            <label for="termsAgree">I agree to the terms and conditions *</label>
+            <span class="error-message" id="termsAgreeError"></span>
+          </div>
+          
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">I would like to receive the monthly newsletter</label>
+          </div>
+          
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">Submit Registration</button>
+          </div>
+        </form>
+        <div id="form-message" class="form-message"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Slovak Community Charity</h3>
+          <p>Celebrating and preserving Slovak culture in South Manchester since 2010.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="dates.html">Dates & Fees</a></li>
+            <li><a href="games.html">Educational Games</a></li>
+            <li><a href="gallery.html">Events History</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 123 Community Street, South Manchester, M20 1AB</p>
+          <p><i class="fas fa-phone"></i> +44 123 456 7890</p>
+          <p><i class="fas fa-envelope"></i> info@slovakcommunitycharity.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Slovak Community Charity. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
