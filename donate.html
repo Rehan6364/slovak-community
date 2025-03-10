@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
+    <title>Slovak Community Charity - South Manchester</title>
+    <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -16,6 +18,7 @@
             </div>
             <nav id="navbar">
                 <ul>
+                    <!-- Navigation links to various sections of the website -->
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="membership.html">Membership Sign-Up</a></li>
@@ -23,6 +26,7 @@
                     <li><a href="games.html">Educational Games</a></li>
                     <li><a href="gallery.html">Events History</a></li>
                 </ul>
+                <!-- Hamburger icon for mobile navigation -->
                 <div class="hamburger">
                     <span></span>
                     <span></span>
@@ -32,43 +36,116 @@
         </div>
     </header>
 
-    <section class="page-banner">
-        <div class="container">
-            <h1>Donate to Slovak Community</h1>
-            <p>Your support helps us to preserve and celebrate Slovak culture in South Manchester.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Celebrating Slovak Culture in Manchester</h2>
+            <p>Join our vibrant community and help preserve our heritage</p>
+            <div class="cta-buttons">
+                <!-- Join Us button linking to the membership sign-up page -->
+                <a href="membership.html" class="btn btn-primary">Join Us</a>
+                <!-- Donate button linking to the donation page -->
+                <a href="donate.html" class="btn btn-secondary">Donate</a>
+            </div>
         </div>
     </section>
 
-    <section class="donation-form-section">
+    <section class="features">
         <div class="container">
-            <h2>Make a Donation</h2>
-            <p>Please fill out the form below to make a donation. Your support is greatly appreciated!</p>
-            <form action="/submit-donation" method="POST" class="donation-form">
-                <div class="form-group">
-                    <label for="amount">Enter Amount:</label>
-                    <input type="number" id="amount" name="amount" required>
-                </div>
-                
-                <h3>Select Donation Options:</h3>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="one-time" name="donationOption" value="one-time">
-                    <label for="one-time">One-Time Donation</label>
-                </div>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="monthly" name="donationOption" value="monthly">
-                    <label for="monthly">Monthly Donation</label>
-                </div>
+            <!-- Feature box for community events -->
+            <div class="feature-box">
+                <i class="fas fa-users"></i>
+                <h3>Community Events</h3>
+                <p>Regular gatherings celebrating Slovak traditions and culture</p>
+            </div>
+            <!-- Feature box for language classes -->
+            <div class="feature-box">
+                <i class="fas fa-book"></i>
+                <h3>Language Classes</h3>
+                <p>Learn or improve your Slovak language skills</p>
+            </div>
+            <!-- Feature box for cultural cuisine -->
+            <div class="feature-box">
+                <i class="fas fa-utensils"></i>
+                <h3>Cultural Cuisine</h3>
+                <p>Experience authentic Slovak food at our community events</p>
+            </div>
+        </div>
+    </section>
 
-                <h3>Join Monthly Direct Donation:</h3>
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="monthly-direct" name="monthlyDirectDonation" value="yes">
-                    <label for="monthly-direct">Yes, I want to join monthly direct donation</label>
+    <section class="upcoming-events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="event-countdown">
+                <h3>Next Event: Summer Festival</h3>
+                <div id="countdown">
+                    <!-- Countdown items for days, hours, minutes, and seconds -->
+                    <div class="countdown-item">
+                        <span id="days">4</span>
+                        <p>Days</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">12</span>
+                        <p>Hours</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">58</span>
+                        <p>Minutes</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">18</span>
+                        <p>Seconds</p>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="form-submit">
-                    <button type="submit" class="btn btn-primary">Donate</button>
+    <section class="testimonials">
+        <div class="container">
+            <h2>Community Voices</h2>
+            <div class="testimonial-slider">
+                <!-- Testimonial item -->
+                <div class="testimonial active">
+                    <p>"The Slovak Community Charity has helped me stay connected to my roots while living in Manchester. The events are always welcoming and fun!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Testimonial Author">
+                        <h4>Martina K.</h4>
+                    </div>
                 </div>
+                <!-- More testimonial items -->
+                <div class="testimonial">
+                    <p>"My children love the educational games and activities. It's a wonderful way for them to learn about their Slovak heritage."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial Author">
+                        <h4>Peter N.</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The language classes have been invaluable. I can now speak to my grandparents in their native tongue!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Testimonial Author">
+                        <h4>Lucia M.</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider controls for testimonials -->
+            <div class="slider-controls">
+                <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for the latest events and news</p>
+            <!-- Newsletter subscription form -->
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
             </form>
+            <div id="newsletter-message"></div>
         </div>
     </section>
 
@@ -87,6 +164,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
+                    <!-- Quick links to other pages -->
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
@@ -98,6 +176,7 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact Us</h3>
+                    <!-- Contact information -->
                     <p><i class="fas fa-map-marker-alt"></i> 123 Community Street, South Manchester, M20 1AB</p>
                     <p><i class="fas fa-phone"></i> +44 123 456 7890</p>
                     <p><i class="fas fa-envelope"></i> info@slovakcommunitycharity.org</p>
@@ -108,5 +187,8 @@
             </div>
         </div>
     </footer>
+
+    <!-- Link to the main script file -->
+    <script src="script.js"></script>
 </body>
 </html>
