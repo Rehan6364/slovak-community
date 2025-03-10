@@ -104,7 +104,7 @@ p {
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
+  background-color: red;
   color: white;
 }
 
