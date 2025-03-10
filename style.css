@@ -1,12 +1,12 @@
 /* Base Styles */
 :root {
-  --primary-color:   #FFFFFF; /* Green*/
-  --secondary-color: #0033A0; /* White */
-  --accent-color: #EE1C25; /* Green */
-  --text-color: #333333;
-  --light-gray: #f5f5f5;
-  --medium-gray: #e0e0e0;
-  --dark-gray: #666666;
+  --primary-color:   #FFFFFF; /* White - Represents purity and hope */
+  --secondary-color: #0B4EA2; /* Blue - Symbolizes trust and stability */
+  --accent-color: #EE1C25; /* Red - Represents passion and community spirit */
+  --text-color: #2C2C2C; /* Dark gray for readability */
+  --light-gray: #F8F9FA; /* Soft background gray for a clean look */
+  --medium-gray: #D6D6D6; /* Neutral gray for UI elements */
+  --dark-gray: #444444; /* Dark gray for strong contrast */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --transition: all 0.3s ease;
 }
