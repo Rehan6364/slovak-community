@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Slovak Community Charity</h1>
+                <p>South Manchester</p>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="membership.html">Membership Sign-Up</a></li>
+                    <li><a href="dates.html">Dates & Fees</a></li>
+                    <li><a href="games.html">Educational Games</a></li>
+                    <li><a href="gallery.html">Events History</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Confirmation Section -->
+    <section class="confirmation-section">
+        <div class="container">
+            <h2>Confirmation</h2>
+            <p>Please review your donation details and enter your bank information to complete the donation.</p>
+            <form id="confirmation-form">
+                <!-- Donation Summary -->
+                <div class="form-group">
+                    <h3>Donation Summary</h3>
+                    <p>Amount: <span id="confirm-amount"></span></p>
+                    <p>Options: <span id="confirm-options"></span></p>
+                </div>
+
+                <!-- Registration or Guest -->
+                <div class="form-group">
+                    <h3>Would you like to register?</h3>
+                    <label><input type="radio" name="register" value="yes" checked> Yes</label>
+                    <label><input type="radio" name="register" value="no"> No, proceed as a guest</label>
+                </div>
+
+                <!-- Bank Information -->
+                <div class="form-group">
+                    <h3>Bank Information</h3>
+                    <label for="bank-name">Bank Name:</label>
+                    <input type="text" id="bank-name" name="bankName" required>
+                    <label for="account-number">Account Number:</label>
+                    <input type="text" id="account-number" name="accountNumber" required>
+                    <label for="routing-number">Routing Number:</label>
+                    <input type="text" id="routing-number" name="routingNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Complete Donation</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript to handle form data -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get donation details from previous page
+            const urlParams = new URLSearchParams(window.location.search);
+            const amount = urlParams.get('amount');
+            const options = urlParams.get('options');
+            document.getElementById('confirm-amount').innerText = amount;
+            document.getElementById('confirm-options').innerText = options;
+
+            // Handle form submission
+            document.getElementById('confirmation-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                alert('Thank you for your donation!');
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Slovak Community Charity</h3>
+                    <p>Celebrating and preserving Slovak culture in South Manchester since 2010.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="dates.html">Dates & Fees</a></li>
+                        <li><a href="games.html">Educational Games</a></li>
+                        <li><a href="gallery.html">Events History</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Community Street, South Manchester, M20 1AB</p>
+                    <p><i class="fas fa-phone"></i> +44 123 456 7890</p>
+                    <p><i class="fas fa-envelope"></i> info@slovakcommunitycharity.org</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Raihan Patel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
