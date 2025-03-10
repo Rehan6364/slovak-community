@@ -5,15 +5,15 @@
    ==================================== */
 /* Base Styles */
 :root {
-  --primary-color: #0B4EA2; /* 🇸🇰 Blue - Trust & Stability */
-  --secondary-color: #FFFFFF; /* White - Purity & Hope */
-  --accent-color: #EE1C25; /* 🇸🇰 Red - Passion & Community */
-  --text-color: #2C2C2C; /* Dark Gray - Readability */
-  --light-gray: #F8F9FA; /* Light Gray - Clean Look */
-  --medium-gray: #D6D6D6; /* Medium Gray - UI Elements */
-  --dark-gray: #444444; /* Dark Gray - Strong Contrast */
+  --primary-color:   #FFFFFF; /* Green*/
+  --secondary-color: #0033A0; /* White */
+  --accent-color: #EE1C25; /* Green */
+  --text-color: #333333;
+  --light-gray: #f5f5f5;
+  --medium-gray: #e0e0e0;
+  --dark-gray: #666666;
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --transition: all 0.3s ease-in-out;
+  --transition: all 0.3s ease;
 }
 
 * {
