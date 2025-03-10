@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+</head>
+<body>
+    <h1>Donate to Slovak Community</h1>
+    <form action="/submit-donation" method="POST">
+        <label for="amount">Enter Amount:</label>
+        <!-- Input for entering donation amount -->
+        <input type="number" id="amount" name="amount" required>
+        
+        <h2>Select Donation Options:</h2>
+        <!-- Checkbox for one-time donation -->
+        <label>
+            <input type="checkbox" name="donationOption" value="one-time">
+            One-Time Donation
+        </label><br>
+        <!-- Checkbox for monthly donation -->
+        <label>
+            <input type="checkbox" name="donationOption" value="monthly">
+            Monthly Donation
+        </label>
+        
+        <h2>Join Monthly Direct Donation:</h2>
+        <!-- Checkbox for joining monthly direct donation -->
+        <label>
+            <input type="checkbox" name="monthlyDirectDonation" value="yes">
+            Yes, I want to join monthly direct donation
+        </label>
+        
+        <br><br>
+        <!-- Submit button for the donation form -->
+        <button type="submit">Donate</button>
+    </form>
+</body>
+</html>
