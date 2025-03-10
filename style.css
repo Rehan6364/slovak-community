@@ -3,22 +3,19 @@
    Author: [Raihan Patel]
    Description: Stylesheet for a Slovak charity website.
    ==================================== */
-
-/* ========== Base Styles ========== */
+/* Base Styles */
 :root {
-  /* 🎨 Color Palette (Based on Slovak Flag) */
-  --primary-color: #FFFFFF; /* White - Purity & Hope */
-  --secondary-color: #0B4EA2; /* Blue - Trust & Stability */
-  --accent-color: #EE1C25; /* Red - Passion & Community Spirit */
+  --primary-color: #FFFFFF; /* White - Represents purity and hope */
+  --secondary-color: #0B4EA2; /* Blue - Symbolizes trust and stability */
+  --accent-color: #EE1C25; /* Red - Represents passion and community spirit */
   --text-color: #2C2C2C; /* Dark gray for readability */
-  --light-gray: #F8F9FA; /* Soft background gray */
-  --medium-gray: #D6D6D6; /* Neutral gray */
-  --dark-gray: #444444; /* Dark gray for contrast */
+  --light-gray: #F8F9FA; /* Soft background gray for a clean look */
+  --medium-gray: #D6D6D6; /* Neutral gray for UI elements */
+  --dark-gray: #444444; /* Dark gray for strong contrast */
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --transition: all 0.3s ease-in-out;
+  --transition: all 0.3s ease;
 }
 
-/* ========== Reset Styles ========== */
 * {
   margin: 0;
   padding: 0;
@@ -29,15 +26,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ========== Body Styling ========== */
 body {
-  background-color: var(--light-gray);
-  color: var(--text-color);
   font-family: var(--font-primary);
   line-height: 1.6;
+  color: var(--text-color);
+  background-color: #fff;
 }
 
-/* ========== Container for Layout ========== */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -45,31 +40,53 @@ body {
   padding: 0 20px;
 }
 
-/* ========== Typography ========== */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 15px;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-p { margin-bottom: 15px; }
-
-/* ========== Links ========== */
-a {
-  text-decoration: none;
-  color: var(--secondary-color);
-  transition: var(--transition);
+h1 {
+  font-size: 2.5rem;
 }
 
-a:hover {
-  color: var(--accent-color); /* Turns Red on Hover */
+h2 {
+  font-size: 2rem;
 }
 
-/* ========== Buttons ========== */
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -82,32 +99,32 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: var(--secondary-color); /* Blue Button */
+  background-color: var(--primary-color);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #0A3D7F;
+  background-color: #0a3d7f;
+  color: white;
 }
 
 .btn-secondary {
-  background-color: var(--accent-color); /* Red Button */
+  background-color: var(--primary-color);
   color: white;
 }
 
 .btn-secondary:hover {
-  background-color: #C4121C; /* Darker Red */
+  background-color: #FF0000;
+  color: white;
 }
 
-/* ========== Header ========== */
+/* Header */
 header {
-  background-color: var(--primary-color);
+  background-color: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 15px 0;
-  text-align: center;
 }
 
 .logo {
