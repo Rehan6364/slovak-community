@@ -104,12 +104,12 @@ p {
 }
 
 .btn-secondary {
-  background-color: red;
+  background-color: var(--primary-color);
   color: white;
 }
 
 .btn-secondary:hover {
-  background-color: #d01920;
+  background-color: #FF0000;
   color: white;
 }
 
