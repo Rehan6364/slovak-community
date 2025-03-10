@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const countdownElement = document.getElementById('countdown');
   if (countdownElement) {
     // Set the date we're counting down to
-    var countDownDate = new Date("June 30, 2025 15:37:25").getTime();
+    var countDownDate = new Date("April 24, 2025 15:37:25").getTime();
 
     // Update the count down every 1 second
     var countdownfunction = setInterval(function() {
