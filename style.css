@@ -15,7 +15,12 @@
   --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --transition: all 0.3s ease;
 }
-
+/* Style the logo container */
+.logo-container {
+  position: absolute;
+  top: 10px; /* Adjust the top margin as per your design */
+  right: 20px; /* Adjust the right margin to position the logo properly */
+}
 * {
   margin: 0;
   padding: 0;
