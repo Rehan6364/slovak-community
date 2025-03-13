@@ -16,16 +16,6 @@
   --transition:      all 0.3s ease;
 }
 
-/* Style the logo container */
-.logo-container {
-    text-align: right; /* Align the logo to the right */
-}
-
-.logo {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10px; /* Add some space above the logo */
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
